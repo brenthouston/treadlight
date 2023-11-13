@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* GLOBAL */
+/*Defaults*/
+* { box-sizing: border-box; padding: 0; margin: 0; outline: none; }
+html,
+body { min-width: 320px; overflow-x: hidden;}
+body { font-size: 16px; font-family: 'Montserrat', sans-serif; background-color: #F4F7FB; position: relative; overflow-y: hidden;}
+img { max-width: 100%; height: auto !important; }
+button { background: none; border: none; cursor: pointer; font-family: 'Montserrat', sans-serif; }
+input,
+select,
+textarea { font-size: 16px; font-family: 'Montserrat', sans-serif; }
+.pointer { cursor: pointer; }
+
+/* fonts */
+
+.fjalla{ font-family: 'Fjalla One', sans-serif;}
+ .pt {font-family: 'PT Serif', serif; }
+ .darkgrn { color: #27542D}
+ .lightgrn { color: #399E5A}
+ .blk { color: #001427}
+ .blue { color: #02A9EA}
+ .white { color: #F4FFF8}
+ .upper { text-transform: uppercase;}
+
+/* FLEX POSITIONING */
+.flex { display: flex; }
+.flex.start { justify-content: flex-start; }
+.flex.end { justify-content: flex-end; }
+.flex.center { justify-content: center; align-items: center; }
+.flex.center-v { align-items: center; }
+.flex.center-h { justify-content: center; }
+.flex.between { justify-content: space-between; }
+.flex.evenly { justify-content: space-evenly; }
+.flex.stretch { align-items: stretch; }
+.flex.wrap { flex-wrap: wrap; }
+.flex.nowrap { flex-wrap: nowrap; }
+.flex.grow > * { flex-grow: 1; }
+.flex.row { flex-direction:row; }
+.flex.column { flex-direction: column; }
+.flex.gap-5 { gap: 5px; }
+.flex.gap-10 { gap: 10px; }
+.flex.gap-15 { gap: 15px; }
+.flex.gap-20 { gap: 20px; }
+.flex.basis-100 > *,
+.flex > .basis-100 { flex-basis: 100%; }
+.flex > .grow { flex-grow: 1; }
+.flex > .shrink-0 { flex-shrink: 0; }
+
+/* colors */
+.dg_bg{ background-color: #27542D}
+.bk_bg{ background-color: #001427}
+.lg_bg{ background-color: #399E5A}
+.wht_bg{ background-color: #F4FFF8}
+
+/*Sections*/
+.wrapper { background-color: #F4FFF8; }
+.container {  margin: 0 100px; }
+.card { margin:0 12px; padding: 20px; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.161); border-radius: 5px; border: 1px solid #E2E6EA; margin-bottom:30px; background: #fff;}
+.full-width { width:100%; }
+
+p { font-family: 'Fjalla One', sans-serif; }
+header .wrapper{ background-color: #27542D; margin-bottom: 20px ;}
+header .container > p{  color: #F4FFF8; padding: 5px; margin-left:auto; letter-spacing: .5px;}
+header .social { margin-left: 100px;}
+header .social i { margin: 0 10px;}
+header ul {  gap: 80px; margin:0 10px;list-style: none;}
+
+.hero {margin: 20px 0; min-height: 550px; background-image: url("/images/TreadLight.jpg");  background-size: cover; background-position: center center; }
+
+
+
+.information .nwa { font-size: 4rem; text-align: center; margin: 40px 60px;}
+.information p { padding: 50px 0; font-size: 20px; line-height: 39px; margin: 0 50px; }
+.information .covered { font-size: 4rem; text-align: left; margin: 40px 60px 5px 60px; color:#27542D;}
+.information hr { width: 280px; margin-left: 60px; border-bottom: 3px solid #27542D;}
+.information .years { border: 1px solid #F4FFF8; border-radius: 6px; box-shadow: 0px 0px 9px #0014279c; margin: 44px; padding: 50px;}
+
+
+
+footer { background-color: #27542D; min-height: 300px;}
