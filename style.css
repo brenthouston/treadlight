@@ -4,14 +4,15 @@
 * { box-sizing: border-box; padding: 0; margin: 0; outline: none; }
 html,
 body { min-width: 320px; overflow-x: hidden;}
-body { font-size: 16px; font-family: 'Montserrat', sans-serif; background-color: #F4F7FB; position: relative; overflow-y: hidden;}
+body { font-size: 16px; background-color: #ecf2ee; position: relative; overflow-y: hidden;}
 img { max-width: 100%; height: auto !important; }
 button { background: none; border: none; cursor: pointer; font-family: 'Montserrat', sans-serif; }
 input,
 select,
 textarea { font-size: 16px; font-family: 'Montserrat', sans-serif; }
 .pointer { cursor: pointer; }
-
+a { text-decoration: none; color:#001427; }
+a:hover { color:#02A9EA}
 /* fonts */
 
 .fjalla{ font-family: 'Fjalla One', sans-serif;}
@@ -47,6 +48,7 @@ textarea { font-size: 16px; font-family: 'Montserrat', sans-serif; }
 .flex > .grow { flex-grow: 1; }
 .flex > .shrink-0 { flex-shrink: 0; }
 
+
 /* colors */
 .dg_bg{ background-color: #27542D}
 .bk_bg{ background-color: #001427}
@@ -64,24 +66,40 @@ textarea { font-size: 16px; font-family: 'Montserrat', sans-serif; }
 
 /* local selectors */
 
-
+header {margin-bottom: 20px;}
 p { font-family: 'Fjalla One', sans-serif; }
-header .wrapper{ background-color: #27542D; margin-bottom: 20px ;}
+header .wrapper{ background-color:#27542D; margin-bottom: 20px ;}
 header .container > p{  color: #F4FFF8; padding: 5px; margin-left:auto; letter-spacing: .75px; font-size: 20px;}
 header .social { margin-left: 100px;}
 header .social i { margin: 0 10px;}
 header ul {  gap: 80px; margin:0 10px;list-style: none;}
 /* header .logo {  border-radius: 50%; box-shadow: 10px 10px 25px #0014271b, -10px -10px 25px #fff;} */
 header img {border-radius: 50%; box-shadow: 10px 18px 25px #00142736, -10px -10px 18px #ffffff; min-width: 100px; min-height: 100px; max-width: 150px; max-height: 150px;}
-.hero {margin: 20px 0; min-height: 550px; background-image: url("/images/TreadLight.jpg");  background-size: cover; background-position:  center; }
+.hero { min-height: 550px; background-image: url("/images/TreadLight.jpg");  background-size: cover; background-position:  center; }
+
+.spacer { height: 80px}
 
 
 
-.information .nwa { font-size: 3rem; text-align: center; margin: 40px 60px 40px 60px; padding: 50px}
-.information p { padding: 50px 0; font-size: 22px; line-height: 36px; margin: 0 250px; }
-.information .covered { font-size: 4rem; text-align: center; margin: 40px 60px 40px 60px;}
-.information .years { font-size: 18px; border: 1px solid #F4FFF8; border-radius: 6px; box-shadow: 28px 28px 25px #0014271d, -28px -28px 25px #ffffffe4; margin: 44px; padding: 50px;}
+.information .nwa { font-size: 24px; text-align: center; margin: 30px 45px 0 45px;}
+.information .nwa_two { font-size: 24px; text-align: center; margin-bottom: 20px;}
+.information p {  font-size: 16px;  margin:20px 50px; line-height: 25px;}
+.information img { height: 300px; width:300px; }
+.information .blue { padding-right: 200px; min-height: 333px; width:521px; background-image: url("images/IMG_1609.jpeg"); background-size:cover; background-color: #02A9EA;background-blend-mode: multiply; }
+.information .blue_two { padding-left: 200px; min-height: 333px; width:521px; background-image: url("images/IMG_1604.jpeg"); background-size:cover; background-color: #02A9EA;background-blend-mode: multiply; background-position: left;}
+.information  .twentyfive  { margin: 46px 54px; }
 
 
 
-footer { background-color: #27542D; min-height: 100px;}
+.covered {  font-size: 2.5rem; text-align: center; margin: 40px 60px 40px 80px; text-shadow: -1px 1px  #02A9EA;}
+.years { font-size: 18px; border-radius: 6px; box-shadow: 18px 18px 18px #0014271d, -18px -18px 18px #f7f9f7; margin: 44px; padding: 50px;}
+
+section.photos { margin: 80px 0 60px 0 ;height: 650px; display:flex; flex-direction: row;}
+section .carousel {  position:relative; height: 600px; width:80%; margin: 0 auto; }
+section img { display: flex; justify-content:center; height: 550px !important; object-fit: cover;}
+section .carousel_track { list-style: none; display:flex; }
+section .carousel_pic { position: absolute;  width:100%; display:flex; justify-content: center;}
+section .carousel_indicator { border-radius: 50%; border: 0;width:12px; height:12px; background-color: rgb(0, 0, 0, 0.45); margin: 20px 15px; }
+
+
+footer { background-color:#27542D; min-height: 100px;}
