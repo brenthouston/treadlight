@@ -31,6 +31,7 @@ dotNav.addEventListener('click', e => {
    
         track.style ='transform:translateX(-'+ targetSlide.style.left +');';
         currentSlide.classList.remove('current_slide');
+    
         targetSlide.classList.add('current_slide');
     }
     
