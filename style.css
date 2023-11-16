@@ -75,7 +75,7 @@ header .social i { margin: 0 10px;}
 header ul {  gap: 80px; margin:0 10px;list-style: none;}
 /* header .logo {  border-radius: 50%; box-shadow: 10px 10px 25px #0014271b, -10px -10px 25px #fff;} */
 header img {border-radius: 50%; box-shadow: 10px 18px 25px #00142736, -10px -10px 18px #ffffff; min-width: 100px; min-height: 100px; max-width: 150px; max-height: 150px;}
-.hero { min-height: 550px; background-image: url("/images/TreadLight.jpg");  background-size: cover; background-position:  center; }
+.hero { min-height: 550px; background-image: url("images/TreadLight.jpg");  background-size: cover; background-position:  center; }
 
 .spacer { height: 80px}
 
