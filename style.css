@@ -101,6 +101,9 @@ section .carousel_indicator { border-radius: 50%; border: 1px solid #001427; wid
 section .carousel_indicator.current { background-color: #02A9EA; border: 0; width: 12px; height: 12px;}
 
 
+button.right { position: relative;right: 180px; bottom:400px;}
+button.left{ position: relative;left: 180px; bottom:400px;}
+
 
 .twentyfive .covered {  font-size: 2.5rem; text-align: center; padding: 60px; text-shadow: -1px 1px  #02A9EA;}
 .twentyfive .years { font-size: 18px; border-radius: 6px; box-shadow: 18px 18px 18px #0014271d, -18px -18px 18px #f7f9f7; margin-bottom: 85px; padding: 50px;}
