@@ -98,7 +98,7 @@ section .carousel_img { position: relative; }
 section .carousel_pic { position: absolute;  width:100%; }
 section .notCurrent { opacity: 50%;}
 section .carousel_indicator { border-radius: 50%; border: 1px solid #001427; width:9px; height:9px;  margin: 20px 5px 75px; }
-section .carousel_indicator.current { background-color: #02A9EA;}
+section .carousel_indicator.current { background-color: #02A9EA; border: 0; width: 12px; height: 12px;}
 
 
 
