@@ -12,6 +12,12 @@ const setSlidePosition = ( slides, index ) => {
 
 slides.forEach(setSlidePosition);
 
+const moveToSlide = (track, currentSlide, targetSlide) => {
+
+    track.style ='transform:translateX(-'+ targetSlide.style.left +');';
+    currentSlide.classList.remove('current_slide');
+    targetSlide.classList.add('current_slide');
+}
 
 
 dotNav.addEventListener('click', e => {
@@ -27,13 +33,6 @@ dotNav.addEventListener('click', e => {
     currentDot.classList.remove('current');
     targetDot.classList.add('current');
     
-    const moveToSlide = (track, currentSlide, targetSlide) => {
-   
-        track.style ='transform:translateX(-'+ targetSlide.style.left +');';
-        currentSlide.classList.remove('current_slide');
-    
-        targetSlide.classList.add('current_slide');
-    }
     
 
 moveToSlide(track, currentSlide, targetSlide)
