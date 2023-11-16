@@ -9,7 +9,7 @@ img { max-width: 100%; height: auto !important; }
 button { background: none; border: none; cursor: pointer; font-family: 'Montserrat', sans-serif; }
 input,
 select,
-textarea { font-size: 16px; font-family: 'Montserrat', sans-serif; }
+textarea { font-size: 16px; font-family: Fjalla One, sans-serif; }
 .pointer { cursor: pointer; }
 a { text-decoration: none; color:#001427; }
 a:hover { color:#02A9EA}
@@ -81,9 +81,9 @@ header img {border-radius: 50%; box-shadow: 10px 18px 25px #00142736, -10px -10p
 
 
 
-.information .nwa { font-size: 24px; text-align: center; margin: 30px 45px 0 45px;}
-.information .nwa_two { font-size: 24px; text-align: center; margin-bottom: 20px;}
-.information p {  font-size: 16px;  margin:20px 50px; line-height: 25px;}
+.information .nwa { letter-spacing: .6px; line-height: 38px; font-size: 28px; text-align: center; margin: 30px 45px 0px 45px;}
+.information .nwa_two { font-size: 24px; text-align: center; }
+.information p {  font-size: 16px;  margin:40px 50px; line-height: 25px;}
 .information img { height: 300px; width:300px; }
 .information .blue { padding-right: 200px; min-height: 333px; width:521px; background-image: url("images/IMG_1609.jpeg"); background-size:cover; background-color: #02A9EA;background-blend-mode: multiply; }
 .information .blue_two { padding-left: 200px; min-height: 333px; width:521px; background-image: url("images/IMG_1604.jpeg"); background-size:cover; background-color: #02A9EA;background-blend-mode: multiply; background-position: left;}
@@ -112,6 +112,6 @@ section .carousel_indicator.current { background-color: #02A9EA;}
 
 footer { min-height:220px; width:100%;}
 footer.wrapper { background-color:#27542D;}
-footer nav ul { max-width:600px; min-width: 600px; list-style:none; font-size: 18px;}
-footer nav a{ color:#399E5A; }
-footer .copywrite { font-family: 'Courier New', Courier, monospace; min-width: 600px; font-size: 12px;}
+footer nav ul { max-width:600px; min-width: 600px; list-style:none; font-size: 18px;padding: 30px; font-weight: 100;}
+footer nav a{ color:#F4FFF8; }
+footer .copywrite { font-family: 'Courier New', Courier, monospace; min-width: 600px; font-size: 12px; padding: 20px;}
