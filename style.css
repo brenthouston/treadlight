@@ -74,10 +74,9 @@ header .social { margin-left: 100px;}
 header .social i { margin: 0 10px;}
 header ul {  gap: 80px; margin:0 10px;list-style: none;}
 header img {border-radius: 50%; box-shadow: 10px 18px 25px #00142736, -10px -10px 18px #ffffff; min-width: 100px; min-height: 100px; max-width: 150px; max-height: 150px;}
+
+
 .hero { min-height: 550px; background-image: url("images/TreadLight.jpg");  background-size: cover; background-position:  center; }
-
-.spacer { height: 80px}
-
 
 
 .information .nwa { letter-spacing: .6px; line-height: 38px; font-size: 28px; text-align: center; margin: 30px 45px 0px 45px;}
@@ -91,14 +90,13 @@ header img {border-radius: 50%; box-shadow: 10px 18px 25px #00142736, -10px -10p
 
 
 
-section.photos {display:flex; flex-direction: row;}
+section.photos {display:flex; flex-direction: row; margin-top: 20px }
 section .carousel {  position:relative; height: 600px; width:48%; margin:0 auto; overflow: hidden; }
-section img {  height: 733px !important; width:733px; object-fit: contain;}
+section img {  width:733px; object-fit: contain;}
 section .carousel_track { list-style: none; position: relative; height: 100%; transition: transform 500ms ease-in; }
 section .carousel_img { position: relative; }
 section .carousel_pic { position: absolute;  width:100%; }
 section .notCurrent { opacity: 50%;}
-
 section .carousel_indicator { border-radius: 50%; border: 1px solid #001427; width:9px; height:9px;  margin: 20px 5px 75px; }
 section .carousel_indicator.current { background-color: #02A9EA;}
 
@@ -111,6 +109,6 @@ section .carousel_indicator.current { background-color: #02A9EA;}
 
 footer { min-height:220px; width:100%;}
 footer.wrapper { background-color:#27542D;}
-footer nav ul { max-width:600px; min-width: 600px; list-style:none; font-size: 18px;padding: 30px; font-weight: 100;}
+footer nav ul { max-width:600px; min-width: 600px; list-style:none; font-size: 18px; padding: 30px; font-weight: 100;}
 footer nav a{ color:#F4FFF8; }
 footer .copywrite { font-family: 'Courier New', Courier, monospace; min-width: 600px; font-size: 12px; padding: 20px;}
