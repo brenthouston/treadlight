@@ -3,8 +3,8 @@
 /*Defaults*/
 * { box-sizing: border-box; padding: 0; margin: 0; outline: none; }
 html,
-body { min-width: 320px; overflow-x: hidden;}
-body { font-size: 16px; background-color: #ecf2ee; position: relative; overflow-y: hidden;}
+body { min-width: 320px; }
+body { font-size: 16px; background-color: #ecf2ee; position: relative;}
 img { max-width: 100%; height: auto !important; }
 button { background: none; border: none; cursor: pointer; font-family: 'Montserrat', sans-serif; }
 input,
@@ -94,12 +94,15 @@ header img {border-radius: 50%; box-shadow: 10px 18px 25px #00142736, -10px -10p
 .covered {  font-size: 2.5rem; text-align: center; margin: 40px 60px 40px 80px; text-shadow: -1px 1px  #02A9EA;}
 .years { font-size: 18px; border-radius: 6px; box-shadow: 18px 18px 18px #0014271d, -18px -18px 18px #f7f9f7; margin: 44px; padding: 50px;}
 
-section.photos { margin: 80px 0 60px 0 ;height: 650px; display:flex; flex-direction: row;}
-section .carousel {  position:relative; height: 600px; width:80%; margin: 0 auto; }
-section img { display: flex; justify-content:center; height: 550px !important; object-fit: cover;}
-section .carousel_track { list-style: none; display:flex; }
-section .carousel_pic { position: absolute;  width:100%; display:flex; justify-content: center;}
+section.photos {height: 650px; display:flex; flex-direction: row;}
+section .carousel {  position:relative; height: 600px; width:50%; margin:0 auto; overflow: hidden; }
+section img {  height: 550px !important; width:733px; object-fit: cover;}
+section .carousel_track { list-style: none; position: relative; height: 100%; transition: transform 500ms ease-in; margin: 60px 0;}
+section .carousel_img { position: relative; }
+section .carousel_pic { position: absolute;  width:100%; }
+
 section .carousel_indicator { border-radius: 50%; border: 0;width:12px; height:12px; background-color: rgb(0, 0, 0, 0.45); margin: 20px 15px; }
+section .carousel_indicator.current { background-color: #001427;}
 
 
 footer { background-color:#27542D; min-height: 100px;}
