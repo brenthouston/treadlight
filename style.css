@@ -107,8 +107,8 @@ section .carousel_indicator.current { background-color: #02A9EA;}
 
 
 
-footer { min-height:220px; width:100%;}
+footer { min-height:180px; width:100%;}
 footer.wrapper { background-color:#27542D;}
 footer nav ul { max-width:600px; min-width: 600px; list-style:none; font-size: 18px; padding: 30px; font-weight: 100;}
-footer nav a{ color:#F4FFF8; }
-footer .copywrite { font-family: 'Courier New', Courier, monospace; min-width: 600px; font-size: 12px; padding: 20px;}
+footer nav a{ color:#4eb570; }
+footer .copywrite { color:#4eb570; font-family: 'Courier New', Courier, monospace; min-width: 600px; font-size: 12px; padding: 20px;}
