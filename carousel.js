@@ -17,7 +17,7 @@ const setSlidePosition = ( slides, index ) => {
 const hideButton = (slides, prevButton, nextButton, targetIndex) =>{
     if(targetIndex == 0){
         prevButton.classList.add('is_hidden')
-       
+       nextButton.classList.remove('is_hidden')
     }else if(targetIndex === slides.length -1) {
         nextButton.classList.add('is_hidden')
         prevButton.classList.remove('is_hidden')
