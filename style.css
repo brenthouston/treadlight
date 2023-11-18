@@ -91,7 +91,7 @@ header img {border-radius: 50%; box-shadow: 10px 18px 25px #00142736, -10px -10p
 
 
 section.photos {display:flex; flex-direction: row; margin-top: 20px }
-section .carousel {  position:relative; height: 600px; width:48%; margin:0 auto; overflow: hidden; }
+section .carousel {  position:relative; height: 600px; width:733px; margin:0 auto; overflow: hidden; }
 section img {  width:733px; object-fit: contain;}
 section .carousel_track { list-style: none; position: relative; height: 100%; transition: transform 500ms ease-in; }
 section .carousel_img { position: relative; }
@@ -101,9 +101,9 @@ section .carousel_indicator { border-radius: 50%; border: 1px solid #001427; wid
 section .carousel_indicator.current { background-color: #02A9EA; border: 0; width: 12px; height: 12px;}
 
 
-button.right { position: relative;right: 300px; bottom:400px;}
-button.left{ position: relative;left: 300px; bottom:400px;}
-
+button.right { position: relative;left: 400px; bottom:400px;}
+button.left{ position: relative;right: 400px; bottom:400px;}
+button.is_hidden {display: none;}
 
 .twentyfive .covered {  font-size: 2.5rem; text-align: center; padding: 60px; text-shadow: -1px 1px  #02A9EA;}
 .twentyfive .years { font-size: 18px; border-radius: 6px; box-shadow: 18px 18px 18px #0014271d, -18px -18px 18px #f7f9f7; margin-bottom: 85px; padding: 50px;}

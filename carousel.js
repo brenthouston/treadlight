@@ -8,11 +8,25 @@ const prevButton = document.querySelector('button.left')
 const slideWidth = "733";
 
 
+
 const setSlidePosition = ( slides, index ) => {
     slides.style.left = slideWidth * index + "px";
 
 } 
 
+const hideButton = (slides, prevButton, nextButton, targetIndex) =>{
+    if(targetIndex == 0){
+        prevButton.classList.add('is_hidden')
+       
+    }else if(targetIndex === slides.length -1) {
+        nextButton.classList.add('is_hidden')
+        prevButton.classList.remove('is_hidden')
+    }else{
+        nextButton.classList.remove('is_hidden')
+        prevButton.classList.remove('is_hidden')
+    }
+    
+}
 
 
 
@@ -24,10 +38,12 @@ nextButton.addEventListener('click', e => {
     const nextSlide = thisSlide.nextElementSibling;
     const currentDot = dotNav.querySelector('.current')
     const nextDot = currentDot.nextElementSibling;
-
+    const nextIndex = slides.findIndex( slide => slide === nextSlide )
+  
+    hideButton(slides, prevButton, nextButton, nextIndex)
     moveToSlide(track,thisSlide,nextSlide)
     updateDots(currentDot, nextDot)
-    
+   
 
 });
 
@@ -36,7 +52,9 @@ prevButton.addEventListener('click', e => {
     const prevSlide = thisSlide.previousElementSibling;
     const currentDot = dotNav.querySelector('.current');
     const prevDot = currentDot.previousElementSibling;
+    const slideIndex = slides.findIndex( slide => slide  === thisSlide)
 
+    hideButton(slides, prevButton, nextButton, slideIndex)
     moveToSlide(track, thisSlide, prevSlide)
     updateDots(currentDot, prevDot)
 })
@@ -61,17 +79,24 @@ dotNav.addEventListener('click', e => {
     const targetDot = e.target.closest('button');
     const thisSlide = document.querySelector('.current_slide');
     
-   
-    
     const currentDot = dotNav.querySelector(".current");
     const targetIndex = dots.findIndex(dot => dot === targetDot);
     const targetSlide = slides[targetIndex];
     
-
     
     
-
+    
+    hideButton(slides,prevButton,nextButton,targetIndex)
 moveToSlide(track, thisSlide, targetSlide)
 updateDots(currentDot, targetDot)
    
+
+
+// if(slideIndex === 0 ){
+//     prevButton.classList.add('is_hidden');
+//     nextButton.classList.remove('is_hidden')
+// }else if (slideIndex === slides.length - 1) {
+//     nextButton.classList.add('is_hidden')
+//     prevButton.classList.remove('is_hidden')
+// }
 })
