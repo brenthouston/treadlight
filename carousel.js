@@ -52,7 +52,7 @@ prevButton.addEventListener('click', e => {
     const prevSlide = thisSlide.previousElementSibling;
     const currentDot = dotNav.querySelector('.current');
     const prevDot = currentDot.previousElementSibling;
-    const slideIndex = slides.findIndex( slide => slide  === thisSlide)
+    const slideIndex = slides.findIndex( slide => slide  === prevSlide)
 
     hideButton(slides, prevButton, nextButton, slideIndex)
     moveToSlide(track, thisSlide, prevSlide)
@@ -92,11 +92,5 @@ updateDots(currentDot, targetDot)
    
 
 
-// if(slideIndex === 0 ){
-//     prevButton.classList.add('is_hidden');
-//     nextButton.classList.remove('is_hidden')
-// }else if (slideIndex === slides.length - 1) {
-//     nextButton.classList.add('is_hidden')
-//     prevButton.classList.remove('is_hidden')
-// }
+
 })
